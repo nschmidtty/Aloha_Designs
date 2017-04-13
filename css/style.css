@@ -1,0 +1,134 @@
+@font-face{
+  font-family: playfair display bold;
+  src: url("../fonts/PlayfairDisplay Bold.otf");
+  font-weight: bold;
+  }
+  @font-face{
+  font-family: playfair display bold italics;
+  src: url("../fonts/PlayfairDisplay BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+  }
+  @font-face{
+  font-family: playfair display italics;
+  src: url("../fonts/PlayfairDisplay-Italics.otf");
+  font-style: italic;
+  }
+  @font-face{
+  font-family: playfair display;
+  src: url("../fonts/PlayfairDisplay-Regular.otf");
+  }
+  @font-face{
+  font-family: raleway light;
+  src: url("../fonts/Raleway-Light.ttf");
+  font-weight: lighter;
+  }
+  @font-face{
+  font-family: raleway light italic;
+  src: url("../fonts/Raleway-LightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+  }
+  @font-face{
+  font-family: raleway medium;
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-weight: normal;
+  }
+  @font-face{
+  font-family: raleway medium italic;
+  src: url("../fonts/Raleway-MediumItalic.ttf");
+  font-weight: normal;
+  font-style: inherit;
+  }
+
+
+
+body{
+  width: 100%;
+  margin: 0px;
+}
+
+a{
+  color: #e2574c;
+}
+
+.container{
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.nav{
+  display: inline-block;
+}
+
+.navigation-list{
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  color: #e2574c;
+}
+
+.shopping-cart{
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+section{
+  text-align: center;
+  font-family: "playfair display";
+  font-size: 50px;
+  color: white;
+  padding: 300px;
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+  url("../images/banner-girl.png"),
+  url("../images/flower-bkgd.jpg");
+  background-repeat: no-repeat;
+  background-position: center, bottom;
+  background-size: auto, 17%, cover;
+}
+
+section h1{
+  font-family: "raleway medium";
+  font-size: 40px;
+}
+
+h3{
+  font-family: "playfair display";
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.content{
+  font-family: "raleway medium";
+  text-align: center;
+  font-size: 25px;
+}
+
+footer p{
+  display: block;
+}
+
+.linking{
+  float: right;
+}
+
+body ul li{
+  display: inline-block;
+}
+
+body ul li img{
+  height: 20%;
+  width: 20%;
+}
+
+body ul p{
+  display: inline-block;
+  text-align: center;
+}
+
