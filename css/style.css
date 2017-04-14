@@ -43,13 +43,17 @@
 
 
 
+
+
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
 body{
   width: 100%;
   margin: 0px;
-}
-
-.nav img{
-  margin: 10px 10px 10px 10px;
 }
 
 a{
@@ -61,20 +65,46 @@ a{
   margin: 0 auto;
 }
 
-.nav{
-  display: inline-block;
+.content{
+  font-family: "raleway medium";
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 150px;
 }
 
-.navigation-list{
-  display: block;
+
+nav{
+  height: 100px;
+}
+
+nav img{
+  margin: 10px 10px 10px 10px;
+}
+
+nav ul{
   text-align: center;
   position: relative;
-  bottom: 100px;
-  color: #e2574c;
+  bottom: 80px;
+}
+
+nav ul li{
+  display: inline-block;
+  font-family: "raleway medium";
+  font-weight: 900;
+  margin: 0px 20px 0px 20px;
+}
+
+.aloha-logo{
+  height: 80px;
+  width: 150px;
+  margin-left: 30px;
 }
 
 .shopping-cart{
   float: right;
+  height: 65px;
+  width: 65px;
+  margin-right: 30px;
 }
 
 .clear{
@@ -91,8 +121,8 @@ section{
   url("../images/banner-girl.png"),
   url("../images/flower-bkgd.jpg");
   background-repeat: no-repeat;
-  background-position: center, bottom;
-  background-size: auto, 17%, cover;
+  background-position:  center, 50% 200px;
+  background-size: auto, 350px, cover;
 }
 
 section h1{
@@ -105,14 +135,34 @@ h3{
   text-align: center;
   font-size: 40px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 35px;
 }
 
-.content{
-  font-family: "raleway medium";
-  text-align: center;
-  font-size: 25px;
+body ul li img{
+  height: 80%;
+  width: 80%;
 }
+
+body ul{
+  list-style: none;
+  margin: 10px auto;
+  padding: 0px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+body ul p{
+  display: inline-block;
+  text-align: center;
+}
+
+body ul li{
+  display: inline-block;
+  margin: 0px 0px;
+  
+}
+
+
 
 footer p{
   display: block;
@@ -121,18 +171,3 @@ footer p{
 .linking{
   float: right;
 }
-
-body ul li{
-  display: inline-block;
-}
-
-body ul li img{
-  height: 20%;
-  width: 20%;
-}
-
-body ul p{
-  display: inline-block;
-  text-align: center;
-}
-
