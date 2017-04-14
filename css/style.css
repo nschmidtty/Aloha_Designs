@@ -48,6 +48,10 @@ body{
   margin: 0px;
 }
 
+.nav img{
+  margin: 10px 10px 10px 10px;
+}
+
 a{
   color: #e2574c;
 }
