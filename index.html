@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 <html>
 	<head>
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="css\normalize.css">
+		<link rel="stylesheet" href="css\fonts.css">
 		<link rel="stylesheet" href="css\style.css">
 		<title>Aloha Website</title>
 	</head>
@@ -10,8 +11,11 @@
 	<body>
 		<header>
 			<nav>
-					<a href=""><img src="images\aloha-logo.svg" alt="Aloha Logo" class="aloha-logo"></a>
+				<div class="top-images">
+					<a href=""><img src="images\aloha-logo.svg" alt="Aloha Logo " class="aloha-logo"></a>
 					<a href=""><img src="images\cart-icon.svg" alt="Cart Icon" class="shopping-cart"></a>
+				</div>
+				<hr>
 					<ul class="navigation-list">
 						<li><a href="">ABOUT</a></li>
 						<li><a href="">SHOP</a></li>
@@ -32,14 +36,14 @@
 				Browse our current selection of products or sign-up for updates below.
 			</p>
 
-			<ul class="catagories">
-				<li><a href="">MEN'S</a></li>
-				<li><a href="">TRENDS</a></li>
-				<li><a href="">GLASSES</a></li>
-				<li><a href="">SALE</a></li>
-				<li><a href="">BAGS</a></li>
-				<li><a href="">WOMEN'S</a></li>
-			</ul>
+			<div class="catagories">
+				<a href="" class="mens">MEN'S</a>
+				<a href="" class="trends">TRENDS</a>
+				<a href="" class="glasses">GLASSES</a>
+				<a href="" class="sale">SALE</a>
+				<a href="" class="bags">BAGS</a>
+				<a href="" class="womens">WOMEN'S</a>
+			</div>
 
 			<h3><em>Most-Loved</em> <strong>Products</strong></h3>
 			<ul class="container">
@@ -48,21 +52,24 @@
 				<li><img src="images\demin-overall-shorts.jpg" alt=""></li>
 				<li><img src="images\pink-dotted-dress.jpg" alt=""></li>
 			</ul>
-			<ul class="container">
-				<li><p>Dresses<br><strong>Checked Stretch Dress</strong><br>$129.00</p></li>
-				<li><p>Bags<br><strong>Blue Hipster Backpack</strong><br>$69.00</p></li>
-				<li><p>Demin<br><strong>Demin Overall Shorts</strong><br>$89.00</p></li>
-				<li><p>Dresses<br><strong>Pink Dotted Dress</strong><br>$99.00</p></li>
+			<ul class="container ">
+				<li><p>Dresses<br><span><strong>Checked Stretch Dress</strong></span><br>$129.00</p></li>
+				<li><p>Bags<br><span><strong>Blue Hipster Backpack</strong></span><br>$69.00</p></li>
+				<li><p>Demin<br><span><strong>Demin Overall Shorts</strong></span><br>$89.00</p></li>
+				<li><p>Dresses<br><span><strong>Pink Dotted Dress</strong></span><br>$99.00</p></li>
 			</ul>
 
-			<h3><em>Sign-up for</em> <strong>Updates</strong></h3>
-			<p class="content container">
-				Stay updated on our latest product releases, be first to find out about upcoming sales,
-				and get free style tips from our blog. Unsubscrive at any time.
-			</p>
-			
-			<h5>Your Email</h5>
-			<h6>Subscribe</h6>
+			<div class="pitch">
+				<h3><em>Sign-up for</em> <strong>Updates</strong></h3>
+				<p class="content container">
+					Stay updated on our latest product releases, be first to find out about upcoming sales,
+					and get free style tips from our blog. Unscrubscribe at any time.
+				</p>
+				<form action="login" method="post">
+					<input type="email" name="email-address">
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
 
 		<footer>
 			<p class="copywrite">
@@ -74,13 +81,13 @@
 			<p class="location">1490 W Broadway <br>Vancouver, BC, Canada
 			</p>
 			
-			<ul class="linking">
-				<li><a href="">Facebook</a></li>
-				<li><a href="">Twitter</a></li>
-				<li><a href="">Instagram</a></li>
-				<li><a href="">Pintrest</a></li>
-				<li><a href="">Google</a></li>
-			</ul>
+			<div class="linking">
+				<a href="">Facebook</a>
+				<a href="">Twitter</a>
+				<a href="">Instagram</a>
+				<a href="">Pintrest</a>
+				<a href="">Google</a>
+			</div>
 		</footer>
 	</body>
 </html>
