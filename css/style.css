@@ -1,0 +1,351 @@
+/*------------------------General----------------------------------*/
+
+html{
+  width: 100%;
+  font-size: 62.5%;
+  list-style: none;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+
+a{
+  color: #e2574c;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+/*------------------------Top BAr----------------------------------*/
+
+.top-images{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.top-images a{
+  height: 30%;
+}
+
+.aloha-logo{
+  height: 40%;
+  width: 40%;
+  margin-left: 20px;
+}
+
+.shopping-cart{
+  width: 70%;
+  position: relative;
+  left: 15px;
+  bottom: 8px;
+}
+
+hr {
+   width: 95%;
+   height: 1px;
+   color: lightgrey;
+   background-color: lightgray;
+   border-style: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-family: "raleway medium";
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: 20px 20px 0px 20px;
+}
+
+/*------------------------Hero Banner----------------------------------*/
+
+.herobanner{
+  width: 100%;
+  text-align: center;
+  font-family: "playfair display";
+  color: white;
+  padding: 200px 0%;
+  margin-top: 20px;
+
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+  url("../images/banner-girl.png"),
+  url("../images/flower-bkgd.jpg");
+  background-repeat: no-repeat;
+  background-position:  center, 50% 95px;
+  background-size: contain, 220px, cover;
+}
+
+section h1{
+  font-family: "raleway medium";
+  font-size: 2.5rem;
+}
+
+section h2{
+  display: block;
+  margin: auto;
+  font-size: 4rem;
+}
+
+/*------------------------Hand-Crafted Styles ----------------------------------*/
+
+h3{
+  font-family: "playfair display";
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 100px;
+  margin-bottom:25px;
+  font-weight: lighter;
+}
+
+.content{
+  margin: 0 auto;
+  width: 90%;
+  font-family: "raleway medium";
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 100px;
+  line-height: 40px;
+}
+
+strong{
+  font-weight: bold;
+}
+
+/*------------------------Categories----------------------------------*/
+
+.catagories{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+font-family: "raleway medium";
+font-size: 3rem;
+color: white;
+justify-content: space-around;
+}
+
+.mens{
+  padding: 133px 254px;
+  background-image: url("../images/mens-category.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.row2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trends{
+  display: flex;
+  padding: 125px 14%;
+  background-image: url("../images/trends-category.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 5px 5px 5px 0px;
+}
+
+.glasses{
+  display: flex;
+  padding: 125px 16%;
+  background-image: url("../images/glasses-category.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 5px 0px 5px 5px;
+}
+
+.row3{
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale{
+  display: flex;
+  padding: 125px 18%;
+  background-image: url("../images/sale-category.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 5px 5px 5px 0px;
+}
+
+.bags{
+  padding: 125px 18%;
+  background-image: url("../images/bags-category.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 5px 0px 5px 5px;
+}
+
+.womens{
+  padding: 133px 227px;
+  background-image: url("../images/womens-category.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 5px;
+}
+
+/*------------------------Carasell----------------------------------*/
+
+.carasell-pics li img{
+  height: 10%;
+  width: 10%;
+}
+
+.carasell-list{
+  display: inline-block;
+  line-height: 40px;
+  font-family: "raleway medium";
+  text-align: center;
+  font-size: 1.5rem;
+  color: grey;
+}
+
+ .carasell-list span{
+  font-family: playfair display;
+  color: #e2574c;
+  font-size: 3rem;
+}
+
+/*--------------------------------------Pitch-------------------------*/
+
+.pitch{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/wave-bkgd.jpg");
+  background-repeat: no-repeat;
+  padding: 0px 2% 150px 2.5%;
+  background-size: 300%;
+  background-position: bottom;
+  width: 95%;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+
+.pitch h3{
+  position: relative;
+}
+
+.pitch p{
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 50px;
+}
+
+/*--------------------------------------Button-------------------------*/
+
+form{
+  position: relative;
+  top: 100px;
+  background-color: white;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+input{
+  align-items: center;
+  border-radius: 30px;
+  border-style: none;
+  height: 53px;
+  width: 65%;
+}
+
+button{
+  display: inline-block;
+  border-style: none;
+  border-radius: 30px;
+  background: #E2574C;
+  width: 150px;
+  height: 45px;
+   margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "raleway medium";
+  font-size: 2rem;
+}
+
+
+/*--------------------------------------Footer-------------------------*/
+
+footer{
+  font-family: "playfair display";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 2rem;
+  justify-content: center;
+  color: white;
+  background-color: #242424;
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+.copywrite{
+  margin-top: 80px;
+}
+
+.contact span{
+  text-decoration: underline;
+}
+
+.location{
+  color: darkgrey;
+}
+
+footer p{
+  font-family: "playfair display";
+  text-align: center;
+}
+
+.linking{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px;
+}
+
+.linking a{
+  color: white;
+  margin: 0px 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+
+
+}
