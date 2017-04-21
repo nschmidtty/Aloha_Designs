@@ -1,13 +1,15 @@
+/*------------------------General----------------------------------*/
+
 html{
-  font-size: 62.5%;
-  height: 100%;
   width: 100%;
+  font-size: 62.5%;
+  list-style: none;
 }
 
 body{
-  height: 100%;
   width: 100%;
-  margin: 0px;
+  margin: 0;
+  list-style: none;
 }
 
 a{
@@ -15,64 +17,55 @@ a{
   text-decoration: none;
 }
 
-
-.content{
-  font-family: "raleway medium";
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 150px;
+ul{
+  list-style: none;
 }
 
-/*--------------------------------------Nav-------------------------*/
+/*------------------------Top BAr----------------------------------*/
+
+.top-images{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.top-images a{
+  height: 30%;
+}
+
+.aloha-logo{
+  height: 40%;
+  width: 40%;
+}
+
+.shopping-cart{
+  width: 70%;
+  position: relative;
+  left: 15px;
+  bottom: 8px;
+}
 
 hr {
    width: 95%;
-   height: 2px;
+   height: 1px;
    color: lightgrey;
    background-color: lightgray;
    border-style: none;
 }
 
 nav{
-  height: 100px;
-}
-
-nav img{
-  margin: 10px 10px 10px 10px;
-}
-
-nav ul{
   display: flex;
-  flex: 1, 1, 100px;
   justify-content: space-around;
-  text-align: center;
-}
-
-nav ul li{
+  list-style: none;
+  flex-direction: row;
+  text-transform: uppercase;
   font-family: "raleway medium";
   font-weight: 900;
-  margin: 0px 20px 0px 20px;
+  font-size: 1.8rem;
+  margin: 20px 20px 0px 20px;
 }
 
-.top-images{
-  display: flex;
-  justify-content: space-between;
-}
-
-.aloha-logo{
-  height: 80px;
-  width: 150px;
-  margin-left: 30px;
-}
-
-.shopping-cart{
-  height: 65px;
-  width: 65px;
-  margin-right: 30px;
-}
-
-
-/*--------------------------------------Hero-------------------------*/
+/*------------------------Hero Banner----------------------------------*/
 
 section{
   width: 100%;
@@ -80,18 +73,19 @@ section{
   font-family: "playfair display";
   color: white;
   padding: 200px 0%;
-  margin-top: 50px;
+  margin-top: 20px;
+
   background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
   url("../images/banner-girl.png"),
   url("../images/flower-bkgd.jpg");
   background-repeat: no-repeat;
-  background-position:  center, 50% 50px;
+  background-position:  center, 50% 95px;
   background-size: contain, 220px, cover;
 }
 
 section h1{
   font-family: "raleway medium";
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 section h2{
@@ -100,8 +94,32 @@ section h2{
   font-size: 4rem;
 }
 
+/*------------------------Hand-Crafted Styles ----------------------------------*/
 
-/*--------------------------------------Categories-------------------------*/
+h3{
+  font-family: "playfair display";
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 100px;
+  margin-bottom:25px;
+  font-weight: lighter;
+}
+
+.content{
+  margin: 0 auto;
+  width: 90%;
+  font-family: "raleway medium";
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 100px;
+  line-height: 40px;
+}
+
+strong{
+  font-weight: bold;
+}
+
+/*------------------------Categories----------------------------------*/
 
 .catagories{
 display: flex;
@@ -114,159 +132,158 @@ justify-content: space-around;
 }
 
 .mens{
-  display: flex;
   padding: 133px 254px;
   background-image: url("../images/mens-category.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  margin: 10px;
+  margin-bottom: 5px;
+}
+
+.row2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .trends{
   display: flex;
-  padding: 145px 96px;
+  padding: 125px 14%;
   background-image: url("../images/trends-category.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  margin: 10px;
+  margin: 5px 5px 5px 0px;
 }
 
 .glasses{
   display: flex;
-  padding: 145px 96px;
+  padding: 125px 16%;
   background-image: url("../images/glasses-category.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  margin: 10px;
+  margin: 5px 0px 5px 5px;
+}
+
+.row3{
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sale{
   display: flex;
-  padding: 145px 125px;
+  padding: 125px 18%;
   background-image: url("../images/sale-category.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  margin: 10px;
+  margin: 5px 5px 5px 0px;
 }
 
 .bags{
-  display: flex;
-  padding: 145px 123px;
+  padding: 125px 18%;
   background-image: url("../images/bags-category.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  margin: 10px;
+  margin: 5px 0px 5px 5px;
 }
 
 .womens{
-  display: flex;
   padding: 133px 227px;
   background-image: url("../images/womens-category.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  margin: 10px;
+  margin-top: 5px;
 }
 
-h3{
-  font-family: "playfair display";
-  text-align: center;
-  font-size: 40px;
-  margin-top: 100px;
-  margin-bottom: 35px;
+/*------------------------Carasell----------------------------------*/
+
+.carasell-pics li img{
+  height: 10%;
+  width: 10%;
 }
 
-
-/*--------------------------------------Wheel-------------------------*/
-
-body ul li img{
-  height: 80%;
-  width: 80%;
-}
-
-body ul p{
+.carasell-list{
   display: inline-block;
+  line-height: 40px;
   font-family: "raleway medium";
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: grey;
 }
 
-body ul li{
-  display: inline-block;
-  margin: 0px 0px;
-}
-
-body ul li span{
+ .carasell-list span{
+  font-family: playfair display;
   color: #e2574c;
-  font-size: 3.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-/*  font-family: */
+  font-size: 3rem;
 }
 
 /*--------------------------------------Pitch-------------------------*/
 
 .pitch{
-  background-image: url("../images/wave-bkgd.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/wave-bkgd.jpg");
   background-repeat: no-repeat;
-  padding: 100px 25% 300px 25%;
-  background-size: cover;
+  padding: 0px 2% 150px 2.5%;
+  background-size: 300%;
   background-position: bottom;
-  width: 50%;
-  height: 40%;
+  width: 95%;
+  height: 300px;
   text-align: center;
-  margin: 0 auto;
-}
-
-.pitch p{
-  margin-bottom: 75px;
-  position: relative;
-  bottom: 50%;
+  color: white;
 }
 
 .pitch h3{
   position: relative;
-  bottom: 50%;
+}
+
+.pitch p{
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 50px;
 }
 
 /*--------------------------------------Button-------------------------*/
 
 form{
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  position: relative;
+  top: 100px;
   background-color: white;
-  border-radius: 20px;
-  width: 700px;
+  border-radius: 30px;
+  margin: 30px;
 }
 
 input{
-  display: flex;
-  flex: 1,1;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 30px;
   border-style: none;
-  height: 40px;
-  width: 500px;
+  height: 53px;
+  width: 65%;
 }
 
 button{
   display: inline-block;
   border-style: none;
-  border-radius: 20px;
-  background: orangered;
+  border-radius: 30px;
+  background: #E2574C;
   width: 150px;
-  height: 38px;
+  height: 45px;
+   margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "raleway medium";
+  font-size: 2rem;
 }
 
-.subscribe{
-  margin: 0 auto;
-  text-align: center;
-}
 
 /*--------------------------------------Footer-------------------------*/
 
@@ -279,19 +296,20 @@ footer{
   font-size: 2rem;
   justify-content: center;
   color: white;
-  background-color: darkslategray;
+  background-color: #242424;
+  margin-top: 15px;
+  line-height: 30px;
 }
 
 .copywrite{
-  flex: 1, 1, 100px;
+  margin-top: 80px;
 }
 
-.contact{
-   flex: 1, 1, 100px;
+.contact span{
+  text-decoration: underline;
 }
 
 .location{
-  flex: 1, 1, 100px;
   color: darkgrey;
 }
 
@@ -304,7 +322,26 @@ footer p{
   display: flex;
   justify-content: center;
   text-align: center;
+  margin: 40px;
 }
+
+.linking a{
+  color: white;
+  margin: 0px 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media all and (min-width: 600px){
