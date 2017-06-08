@@ -426,33 +426,48 @@ footer p {
   display: none;
 }
 
+
+/*------------------------------Tablet View-------------------------*/
+
 @media all and (min-width: 600px) {
   html {
     font-size: 16px;
   }
+  header {
+    flex-wrap: nowrap;
+  }
   .top-images a {
     height: 30%;
   }
+  .aloha-link{
+    order: 1;
+    flex: 1 1 20%;
+    min-width: 20%;
+    max-width: 20%;
+  }
   .aloha-logo {
-    height: 30%;
-    width: 30%;
+    height: 80%;
+    width: auto;
     margin-left: 15px;
     margin-top: 10px;
   }
+  .cart-link{
+    order: 3;
+    flex: 1 1 15%;
+    min-width: 15%;
+    max-width: 15%;
+  }
   .shopping-cart {
-    width: 50%;
-    position: relative;
-    top: 5px;
-    left: 35px;
+    width: auto;
   }
   hr {
     height: 0px;
   }
   nav {
-    display: block;
-    position: absolute;
-    left: 25%;
-    top: 25px;
+    flex: 1 1 60%;
+    min-width: 60%;
+    max-width: 60%;
+    order: 2;
     list-style: none;
     text-transform: uppercase;
     font-family: "raleway light";
@@ -594,6 +609,9 @@ footer p {
   }
 }
 
+
+/*--------------------------------------Desktop View-------------------------*/
+
 @media all and (min-width: 1240px) {
   .contain {
     max-width: 1240px;
@@ -607,22 +625,21 @@ footer p {
   header {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 10px;
-    width: 50%;
     height: 100%;
     align-content: center;
   }
   .aloha-link {
     margin-top: 10px;
     order: 1;
-    flex: 1 0 25%;
-    max-width: 25%;
+    flex: 1 0 10%;
+    max-width: 10%;
   }
   .cart-link {
     margin-top: 10px;
     order: 3;
-    flex: 1 0 40%;
+    flex: 1 0 10%;
     max-width: 25%;
   }
   .aloha-logo {
@@ -639,10 +656,9 @@ footer p {
   nav {
     order: 2;
     position: static;
-    flex: 1 0 50%;
-    max-width: 50%;
+    flex: 1 0 63%;
+    max-width: 63%;
     align-content: center;
-    margin: 0px 130px 0px 150px;
   }
   nav ul {
     display: flex;
