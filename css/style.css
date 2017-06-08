@@ -32,7 +32,10 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 10px;
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+  width: 100%;
 }
 
 .cart-link {
@@ -627,7 +630,6 @@ footer p {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 10px;
-    height: 100%;
     align-content: center;
   }
   .aloha-link {
@@ -728,6 +730,13 @@ footer p {
     /* height of carousel */
     margin-right: 10px;
   }
+
+  .items-in-cart{
+    position: relative;
+    left: 78px;
+    bottom: 24px;
+  }
+  
   /*--------------------------------------Button-------------------------*/
   .pitch {
     display: flex;
