@@ -1,126 +1,126 @@
 /*------------------------General----------------------------------*/
 
-html{
+html {
   width: 100%;
   font-size: 14px;
   list-style: none;
 }
 
-body{
+body {
   width: 100%;
   margin: 0;
   list-style: none;
 }
 
-a{
+a {
   color: #e2574c;
   text-decoration: none;
 }
 
 a:hover {
-    color: #b64036;
+  color: #b64036;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
+
 /*------------------------Top BAr----------------------------------*/
-header{
+
+header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 10px;
 }
 
-.cart-link{
+.cart-link {
   display: flex;
   justify-content: flex-end;
   flex: 1 0 50%;
   height: 60px;
 }
 
-.aloha-link{
+.shopping-cart {
+  width: auto;
+  height: 90%;
+  order: 2;
+  margin-right: 10px;
+}
+
+.aloha-link {
   display: flex;
   justify-content: flex-start;
   flex: 1 0 50%;
   height: 50px;
 }
 
-.aloha-logo{
-  position: relative;
-  right: 50px;
-  height:100%;
-  width: 100%;
+.aloha-logo {
+  height: 100%;
+  width: auto;
   order: 1;
+  margin-left: 10px;
 }
-
-.shopping-cart{
-  position: relative;
-  left: 50px;
-  width: 90%;
-  height: 90%;
-  order: 2;
-}
-
 
 hr {
-   width: 95%;
-   height: 1px;
-   color: lightgrey;
-   background-color: lightgray;
-   border-style: none;
+  width: 95%;
+  height: 1px;
+  color: lightgrey;
+  background-color: lightgray;
+  border-style: none;
 }
 
-nav{
+nav {
+  flex: 1 1 100%;
+  min-width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   flex-direction: row;
   text-transform: uppercase;
   font-family: "raleway light";
   font-weight: 900;
   font-size: 0.95rem;
-  margin: 0px 10px 0px 10px;
   order: 3;
 }
 
-nav ul{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    order: 2;
-    margin-top: 20px;
-  }
-  nav ul a{
-    margin: 25px;
-    font-size: 1rem;
-  }
+nav ul {
+  flex: 1 1 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  order: 2;
+  margin-top: 10px;
+  padding: 0;
+}
+
+nav ul a {
+  font-size: 1rem;
+}
+
 
 /*------------------------Hero Banner----------------------------------*/
 
-.herobanner{
+.herobanner {
   width: 100%;
   text-align: center;
   font-family: "playfair display", "Times New Roman", Times, serif;
   color: white;
   padding: 135px 0%;
-  margin-top: 16px;
-
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
-  url("../images/banner-girl.png"),
-  url("../images/flower-bkgd.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   background-repeat: no-repeat;
-  background-position:  center, 50% 65px;
+  background-position: center, 50% 65px;
   background-size: cover, 150px, cover;
 }
 
-section h1{
+section h1 {
   font-family: "raleway light", "Times New Roman", Times, serif;
   font-size: 1.5rem;
 }
 
-section h2{
+section h2 {
   font-family: "playfair display", "Times New Roman", Times, serif;
   font-weight: lighter;
   width: 80%;
@@ -129,18 +129,19 @@ section h2{
   font-size: 2.5rem;
 }
 
+
 /*------------------------Hand-Crafted Styles ----------------------------------*/
 
-h3{
+h3 {
   font-family: "playfair display", "Times New Roman", Times, serif;
   text-align: center;
   font-size: 2.4rem;
   margin-top: 50px;
-  margin-bottom:25px;
+  margin-bottom: 25px;
   font-weight: lighter;
 }
 
-.content{
+.content {
   margin: 0 auto;
   width: 95%;
   font-family: "raleway light", "Times New Roman", Times, serif;
@@ -151,13 +152,14 @@ h3{
   color: #2d2d2d;
 }
 
-strong{
+strong {
   font-weight: bold;
 }
 
+
 /*------------------------Categories----------------------------------*/
 
-.cat-link{
+.cat-link {
   font-family: "raleway medium", "Times New Roman", Times, serif;
   text-transform: uppercase;
   color: white;
@@ -165,7 +167,7 @@ strong{
   position: absolute;
 }
 
-.catagories{
+.catagories {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
@@ -175,25 +177,25 @@ strong{
   position: relative;
 }
 
-.mens{    
+.mens {
   flex: 2 0 100%;
   max-width: 100%;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/mens-category.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/mens-category.jpg");
   background-size: cover;
   padding-top: 50%;
   box-sizing: border-box;
   margin-bottom: 4px;
 }
 
-.mens a{
+.mens a {
   top: 12%;
   left: 40%;
 }
 
-.trends{
+.trends {
   flex: 1 0 48%;
   max-width: 50%;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/trends-category.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/trends-category.jpg");
   background-size: cover;
   padding-top: 50%;
   margin: 0px;
@@ -201,16 +203,15 @@ strong{
   margin: 4px 4px 4px 0px;
 }
 
-.trends a{
+.trends a {
   top: 37%;
   left: 15%;
-  }
+}
 
-
-.glasses{
+.glasses {
   flex: 1 0 48%;
   max-width: 50%;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/glasses-category.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/glasses-category.jpg");
   background-size: cover;
   padding-top: 50%;
   margin: 0px;
@@ -218,68 +219,68 @@ strong{
   margin: 4px 0px 4px 4px;
 }
 
-.glasses a{
+.glasses a {
   top: 37%;
   left: 65%;
-  }
+}
 
-.sale{
+.sale {
   flex: 1 0 40%;
   max-width: 50%;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/sale-category.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/sale-category.jpg");
   background-size: cover;
   padding-top: 50%;
   margin: 4px 4px 4px 0px;
   box-sizing: border-box;
 }
 
-.sale a{
+.sale a {
   top: 62%;
   left: 15%;
 }
 
-.bags{
+.bags {
   flex: 1 0 40%;
   max-width: 50%;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/bags-category.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/bags-category.jpg");
   background-size: cover;
   padding-top: 50%;
   margin: 4px 0px 4px 4px;
   box-sizing: border-box;
 }
 
-.bags a{
+.bags a {
   top: 62%;
   left: 70%;
-  }
+}
 
-.womens{
+.womens {
   flex: 1 1 100%;
   max-width: 100%;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/womens-category.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/womens-category.jpg");
   background-size: cover;
   padding-top: 50%;
   margin-top: 4px;
   box-sizing: border-box;
 }
 
-.womens a{
+.womens a {
   top: 87%;
   left: 38%;
 }
 
+
 /*------------------------Carasell----------------------------------*/
 
-
-
 .carousel-cell {
-  width: 100%; /* full width */
-  height: 475px; /* height of carousel */
+  width: 100%;
+  /* full width */
+  height: 475px;
+  /* height of carousel */
   margin-right: 10px;
 }
 
-.carasell{
-  
+.carasell {
   font-family: "raleway light", "Times New Roman", Times, serif;
   text-align: center;
   font-size: 1.5rem;
@@ -288,7 +289,7 @@ strong{
   margin-top: 40px;
 }
 
-.carasell p{
+.carasell p {
   line-height: 40px;
   margin: 0px;
   margin-bottom: 35px;
@@ -296,7 +297,7 @@ strong{
   text-transform: uppercase;
 }
 
- .carasell span{
+.carasell span {
   font-family: "playfair display", "Times New Roman", Times, serif;
   font-weight: lighter;
   color: #e2574c;
@@ -304,13 +305,14 @@ strong{
   text-transform: none;
 }
 
+
 /*--------------------------------------Pitch-------------------------*/
 
-.pitch{
+.pitch {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/wave-bkgd.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/wave-bkgd.jpg");
   background-repeat: no-repeat;
   padding: 0px 2% 150px 2.5%;
   background-size: 370%;
@@ -321,12 +323,12 @@ strong{
   color: white;
 }
 
-.pitch h3{
+.pitch h3 {
   position: relative;
   top: 60px;
 }
 
-.pitch p{
+.pitch p {
   font-size: 1.2rem;
   display: flex;
   width: 100%;
@@ -336,9 +338,10 @@ strong{
   top: 50px;
 }
 
+
 /*--------------------------------------Button-------------------------*/
 
-form{
+form {
   position: relative;
   top: 100px;
   background-color: white;
@@ -346,7 +349,7 @@ form{
   margin: 30px;
 }
 
-input{
+input {
   align-items: center;
   border-radius: 30px;
   border-style: none;
@@ -354,14 +357,14 @@ input{
   width: 90%;
 }
 
-button{
+button {
   display: inline-block;
   border-style: none;
   border-radius: 30px;
   background: #e2574c;
   width: 125px;
   height: 35px;
-   margin: 0 auto;
+  margin: 0 auto;
   text-align: center;
   color: white;
   font-family: "raleway light", "Times New Roman", Times, serif;
@@ -374,7 +377,7 @@ button{
 
 /*--------------------------------------Footer-------------------------*/
 
-footer{
+footer {
   font-family: "playfair display", "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
@@ -389,448 +392,163 @@ footer{
   padding: 50px 0px;
 }
 
-.copywrite{
+.copywrite {
   margin-top: 50px;
 }
 
-.contact a{
+.contact a {
   text-decoration: underline;
   color: white;
 }
 
-.location{
+.location {
   color: #969696;
 }
 
-footer p{
+footer p {
   font-family: "playfair display", "Times New Roman", Times, serif;
   text-align: center;
 }
 
-.linking{
+.linking {
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 20px 0px 50px 0px;
 }
 
-.linking a{
+.linking a {
   color: white;
   margin: 0px 12px;
 }
 
-.linking a p{
+.linking a p {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (min-width: 600px){
-
-html{
-  font-size: 16px;
-}
-
-.top-images a{
-  height: 30%;
-}
-
-.aloha-logo{
-  height: 30%;
-  width: 30%;
-  margin-left: 15px;
-  margin-top: 10px;
-}
-
-.shopping-cart{
-  width: 50%;
-  position: relative;
-  top: 5px;
-  left: 35px;
-}
-
-hr {
-   height: 0px;
-}
-
-nav{
-  display: block;
-  position: absolute;
-  left: 25%;
-  top: 25px;
-  list-style: none;
-  text-transform: uppercase;
-  font-family: "raleway light";
-  font-weight: 900;
-  font-size: 0.85rem;
-  margin: 15px 10px 0px 10px;
-  word-spacing: 1.1rem; 
-}
-
-
-
-
-.herobanner{
-  padding: 145px 0%;
-}
-
-/*------------------------Categories----------------------------------*/
-  
-.mens{    
-  flex: 2 0 48%;
-  max-width: 48%;
-  padding-top: 20%;
-  margin-bottom: 4px;
-  margin-right: 4px;
-}
-
-.mens a{
-  top: 25%;
-  left: 21%;
-}
-
-.trends{
-  flex: 1 0 24%;
-  max-width: 24%;
-  padding-top: 20%;
-  margin: 4px 4px 4px 4px;
-}
-
-.trends a{
-  top: 25%;
-  left: 58%;
-}
-
-.glasses{
-  flex: 1 0 24%;
-  max-width: 25%;
-  padding-top: 20%;
-  margin: 4px 0px 4px 4px;
-}
-
-.glasses a{
-  top: 25%;
-  left: 83%;
-}
-
-.sale{
-  flex: 1 0 23%;
-  max-width: 23%;
-  padding-top: 20%;
-  margin: 4px 4px 4px 0px;
-}
-
-.sale a{
-  top: 75%;
-  left:9%;
-}
-
-.bags{
-  flex: 1 0 24%;
-  max-width: 24%;
-  padding-top: 20%;
-  margin: 4px 4px 4px 4px;
-}
-
-.bags a{
-  top: 75%;
-  left: 34%;
-}
-
-.womens{
-  flex: 2 0 50%;
-  max-width: 50%;
-  padding-top: 20%;
-  margin-top: 4px;
-  margin-left: 4px;
-}
-
-.womens a{
-  top: 75%;
-  left: 69%;
-}
-
-/*--------------------------------------Button-------------------------*/
-.pitch{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-around;
-  text-align: center;
-}
-
-
-form{
-  left: 18%;
-  border-radius: 30px;
-  margin: 30px;
-  width: 400px;
-}
-
-input{
-  align-items: center;
-  border-radius: 30px;
-  border-style: none;
-  height: 40px;
-  width: 90%;
+@media all and (min-width: 600px) {
+  html {
+    font-size: 16px;
   }
-
-button{
-  display: inline-block;
-  border-style: none;
-  border-radius: 30px;
-  background: #e2574c;
-  width: 125px;
-  height: 35px;
-   margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-family: "raleway light";
-  font-size: 1rem;
-  position: absolute;
-  right: 4px;
-  top: 3px;
-}
-
-
-
-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.info{
-  margin-left: 20px;
-  display: flex;
-  flex: 1 0;
-  flex-direction: column;
-  align-content: flex-start;
-}
-
-.linking{
-  display: flex;
-  flex: 1 0;
-  flex-direction: column;
-}
-
-.copywrite{
-  text-align: left;
-  margin: 0;
-}
-
-.contact{
-  text-align: left;
-}
-
-.location{
-  text-align: left;
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (min-width: 1240px){
-
-  .contain{
-    max-width: 1240px;
+  .top-images a {
+    height: 30%;
   }
-    
-  .head-div{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-  }
-
-  header{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 50%;
-    height: 100%;
-    align-content: center;
-  }
-
-  .aloha-link{
+  .aloha-logo {
+    height: 30%;
+    width: 30%;
+    margin-left: 15px;
     margin-top: 10px;
-    order: 1;
-    flex: 1 0 25%;
-    max-width: 25%;
   }
-
-  .cart-link{
-    margin-top: 10px;
-    order: 3;
-    flex: 1 0 40%;
-    max-width: 25%;
-  }
-
-  .aloha-logo{
-    width: 130%;
-    height: 130%;
-  }
-
-  .shopping-cart{
+  .shopping-cart {
     width: 50%;
-    height: 110%;
+    position: relative;
+    top: 5px;
+    left: 35px;
   }
-
   hr {
     height: 0px;
   }
-
-  nav{
-    order: 2;
-    position: static;
-    flex: 1 0 50%;
-    max-width: 50%;
-    align-content: center;
-    margin: 0px 130px 0px 150px;
+  nav {
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 25px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "raleway light";
+    font-weight: 900;
+    font-size: 0.85rem;
+    margin: 15px 10px 0px 10px;
+    word-spacing: 1.1rem;
   }
-
-  nav ul{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    order: 2;
-    margin-top: 45px;
+  .herobanner {
+    padding: 145px 0%;
   }
-  nav ul a{
-    margin: 25px;
-    font-size: 1rem;
-  }
-
-
-
-  .handcrafted p{
-  width: 640px;
-  }
-
-
-
-
-  .herobanner{
-    padding: 220px 0%;
-    background-position:  center, 50% 65px;
-    background-size: contain, 250px, cover;
-  }
-
-  .herobanner h2{
-    font-size: 5rem;
-  }
-
   /*------------------------Categories----------------------------------*/
-    
-  .mens{    
+  .mens {
     flex: 2 0 48%;
     max-width: 48%;
     padding-top: 20%;
     margin-bottom: 4px;
     margin-right: 4px;
   }
-
-  .trends{
+  .mens a {
+    top: 25%;
+    left: 21%;
+  }
+  .trends {
     flex: 1 0 24%;
     max-width: 24%;
     padding-top: 20%;
     margin: 4px 4px 4px 4px;
   }
-
-  .glasses{
+  .trends a {
+    top: 25%;
+    left: 58%;
+  }
+  .glasses {
     flex: 1 0 24%;
     max-width: 25%;
     padding-top: 20%;
     margin: 4px 0px 4px 4px;
   }
-
-  .sale{
+  .glasses a {
+    top: 25%;
+    left: 83%;
+  }
+  .sale {
     flex: 1 0 23%;
     max-width: 23%;
     padding-top: 20%;
     margin: 4px 4px 4px 0px;
   }
-
-  .bags{
+  .sale a {
+    top: 75%;
+    left: 9%;
+  }
+  .bags {
     flex: 1 0 24%;
     max-width: 24%;
     padding-top: 20%;
     margin: 4px 4px 4px 4px;
   }
-
-  .womens{
+  .bags a {
+    top: 75%;
+    left: 34%;
+  }
+  .womens {
     flex: 2 0 50%;
     max-width: 50%;
     padding-top: 20%;
     margin-top: 4px;
     margin-left: 4px;
   }
-  
-
-
-
-
-  .carousel-cell {
-  width: 25%; /* full width */
-  height: 475px; /* height of carousel */
-  margin-right: 10px;
-}
-
-
-
-
+  .womens a {
+    top: 75%;
+    left: 69%;
+  }
   /*--------------------------------------Button-------------------------*/
-  .pitch{
+  .pitch {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-content: space-around;
     text-align: center;
   }
-
-
-  form{
+  form {
     left: 18%;
     border-radius: 30px;
     margin: 30px;
     width: 400px;
   }
-
-  input{
+  input {
     align-items: center;
     border-radius: 30px;
     border-style: none;
     height: 40px;
     width: 90%;
-    }
-
-  button{
+  }
+  button {
     display: inline-block;
     border-style: none;
     border-radius: 30px;
@@ -846,18 +564,199 @@ footer{
     right: 4px;
     top: 3px;
   }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .info {
+    margin-left: 20px;
+    display: flex;
+    flex: 1 0;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  .linking {
+    display: flex;
+    flex: 1 0;
+    flex-direction: column;
+  }
+  .copywrite {
+    text-align: left;
+    margin: 0;
+  }
+  .contact {
+    text-align: left;
+  }
+  .location {
+    text-align: left;
+  }
+}
 
-
-
-  footer{
+@media all and (min-width: 1240px) {
+  .contain {
+    max-width: 1240px;
+  }
+  .head-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+  }
+  header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 100%;
+    align-content: center;
+  }
+  .aloha-link {
+    margin-top: 10px;
+    order: 1;
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+  .cart-link {
+    margin-top: 10px;
+    order: 3;
+    flex: 1 0 40%;
+    max-width: 25%;
+  }
+  .aloha-logo {
+    width: 130%;
+    height: 130%;
+  }
+  .shopping-cart {
+    width: 50%;
+    height: 110%;
+  }
+  hr {
+    height: 0px;
+  }
+  nav {
+    order: 2;
+    position: static;
+    flex: 1 0 50%;
+    max-width: 50%;
+    align-content: center;
+    margin: 0px 130px 0px 150px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    order: 2;
+    margin-top: 45px;
+  }
+  nav ul a {
+    margin: 25px;
+    font-size: 1rem;
+  }
+  .handcrafted p {
+    width: 640px;
+  }
+  .herobanner {
+    padding: 220px 0%;
+    background-position: center, 50% 65px;
+    background-size: contain, 250px, cover;
+  }
+  .herobanner h2 {
+    font-size: 5rem;
+  }
+  /*------------------------Categories----------------------------------*/
+  .mens {
+    flex: 2 0 48%;
+    max-width: 48%;
+    padding-top: 20%;
+    margin-bottom: 4px;
+    margin-right: 4px;
+  }
+  .trends {
+    flex: 1 0 24%;
+    max-width: 24%;
+    padding-top: 20%;
+    margin: 4px 4px 4px 4px;
+  }
+  .glasses {
+    flex: 1 0 24%;
+    max-width: 25%;
+    padding-top: 20%;
+    margin: 4px 0px 4px 4px;
+  }
+  .sale {
+    flex: 1 0 23%;
+    max-width: 23%;
+    padding-top: 20%;
+    margin: 4px 4px 4px 0px;
+  }
+  .bags {
+    flex: 1 0 24%;
+    max-width: 24%;
+    padding-top: 20%;
+    margin: 4px 4px 4px 4px;
+  }
+  .womens {
+    flex: 2 0 50%;
+    max-width: 50%;
+    padding-top: 20%;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+  .carousel-cell {
+    width: 25%;
+    /* full width */
+    height: 475px;
+    /* height of carousel */
+    margin-right: 10px;
+  }
+  /*--------------------------------------Button-------------------------*/
+  .pitch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  form {
+    left: 18%;
+    border-radius: 30px;
+    margin: 30px;
+    width: 400px;
+  }
+  input {
+    align-items: center;
+    border-radius: 30px;
+    border-style: none;
+    height: 40px;
+    width: 90%;
+  }
+  button {
+    display: inline-block;
+    border-style: none;
+    border-radius: 30px;
+    background: #e2574c;
+    width: 125px;
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: "raleway light";
+    font-size: 1rem;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+  }
+  footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     color: white;
   }
-
-  .info{
+  .info {
     display: flex;
     margin-left: 20px;
     display: flex;
@@ -865,30 +764,23 @@ footer{
     flex-direction: column;
     align-content: center;
   }
-
-  .linking{
+  .linking {
     display: flex;
     flex: 1 0;
     flex-direction: column;
   }
-
-  .copywrite{
+  .copywrite {
     text-align: left;
     margin: 0;
   }
-
-  .contact{
+  .contact {
     text-align: left;
   }
-
-  .location{
+  .location {
     text-align: left;
   }
-
-  .linking a p{
-  display: inline-block;
-  margin-left: 10px;
-}
-
-
+  .linking a p {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }
